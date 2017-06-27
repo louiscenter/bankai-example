@@ -1,0 +1,20 @@
+{
+  "name": "bankai-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && bankai build index.js dist/ --css [ -u sheetify-nested ]",
+    "start": "bankai index.js -p 7000 --debug --css [ -u sheetify-nested ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bankai": "^8.1.1",
+    "sheetify-nested": "^1.0.2"
+  },
+  "dependencies": {
+    "choo": "^5.6.2",
+    "sheetify": "^6.1.0"
+  }
+}
